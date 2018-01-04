@@ -15,4 +15,7 @@
 
 
 # MAIN
-apt-get install -y -q qemu-system-x86 libvirt-clients openvswitch-switch
+apt-get install -y -q qemu-system-x86 libvirt-clients libvirt-daemon virt-manager openvswitch-switch
+
+modprobe kvm_intel
+modprobe kvm_amd
